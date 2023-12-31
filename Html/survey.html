@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>V_STORES Survey Form</title>
+</head>
+<body>
+
+    <!-- Page Title -->
+    <h1 id="title">V_Stores Survey Form</h1>
+
+    <!-- Short Explanation -->
+    <p id="description">Thank you for taking the time to help us improve the our services</p>
+
+    <!-- Form Element -->
+    <form id="survey-form">
+
+        <!-- Name Input Field -->
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <!-- Email Input Field -->
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <!-- Number Input Field -->
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" placeholder="Enter a number" min="15" max="100" required>
+
+        <!-- Select Dropdown -->
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown">
+            <option value="">Selcet a option</option>
+            <option value="1">Retailer</option>
+            <option value="2">Wholeseller</option>
+            <option value="3">Consumer</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <label>Choose a Store branch :</label>
+        <input type="radio" id="option1" name="radioGroup" value="option1">
+        <label for="option1">Headbridge</label>
+        <input type="radio" id="option2" name="radioGroup" value="option2">
+        <label for="option2">Asaba</label>
+
+        <!-- Checkboxes -->
+        <label>Select Shopping Method(s):</label>
+        <input type="checkbox" id="checkbox1" name="checkboxGroup" value="checkbox1">
+        <label for="checkbox1">Virtual store</label>
+        <input type="checkbox" id="checkbox2" name="checkboxGroup" value="checkbox2">
+        <label for="checkbox2">Physical store</label>
+
+        <!-- Textarea for Additional Comments -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" placeholder="Enter your comments"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
